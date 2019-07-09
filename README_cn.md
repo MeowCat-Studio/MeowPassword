@@ -40,5 +40,5 @@ The C@ts Ar3 Best Pet And 5ay Mew0
 ### 鸣谢
 -----------
 - [Material Design Lite](https://getmdl.io/)
-- [Seek Password](https://github.com/Wsine/seekpassword)@Wsine
+- [Seek Password](https://github.com/Wsine/seekpassword)@[Wsine](https://github.com/Wsine/)
 - [花密](https://flowerpassword.com/)
