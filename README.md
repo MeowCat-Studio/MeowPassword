@@ -19,7 +19,7 @@ MeowPassword is a Javascript-based password generator
 -----------
 - Why I create this project?
 
-After reading Wsine's article, I browsed through the [SeekPassword](https://github.com/Wsine/seekpassword) project and found that there were some defects in the project, such as the fixed password length of 10, the insufficient password length caused by violent removal of special characters, and so on. MeowPassword came from it. (By the way, I fixed a bug for @Wsine)
+After reading Wsine's article, I browsed through the [SeekPassword](https://github.com/Wsine/seekpassword) project and found that there were some defects in the project, such as the fixed password length of 10, the insufficient password length caused by violent removal of special characters, and so on. MeowPassword came from it. (By the way, I fixed a bug for Wsine)
 
 ### Usage
 - Online
@@ -39,5 +39,5 @@ Download [master.zip](https://github.com/MeowCat-Studio/MeowPassword/archive/mas
 ### Thanks
 -----------
 - [Material Design Lite](https://getmdl.io/)
-- [Seek Password](https://github.com/Wsine/seekpassword)
+- [Seek Password](https://github.com/Wsine/seekpassword)@Wsine
 - [Flower Password](https://flowerpassword.com/)
