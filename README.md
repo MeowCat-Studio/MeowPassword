@@ -1,7 +1,7 @@
 # MeowPassword [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/MeowCat-Studio/GooTool/blob/master/LICENSE)
 The C@ts Ar3 Best Pet And 5ay Mew0
 
-[README_cn](README_cn.md)
+[简体中文 Simplified Chinese](README_cn.md)
 
 MeowPassword is a Javascript-based password generator
 
@@ -23,15 +23,18 @@ After reading Wsine's article, I browsed through the [SeekPassword](https://gith
 
 ### Usage
 - Online
+
 [Open me](http://password.meowcat.org/)
 
 - Offline
+
 Download [master.zip](https://github.com/MeowCat-Studio/MeowPassword/archive/master.zip) and open index.html
 
 ### TODO
 -----------
 - Password saver
 - Mini program (Maybe I need to wait until I'm an adult.)
+- Translate System
 
 ### Thanks
 -----------
