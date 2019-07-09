@@ -40,5 +40,5 @@ Download [master.zip](https://github.com/MeowCat-Studio/MeowPassword/archive/mas
 ### Thanks
 -----------
 - [Material Design Lite](https://getmdl.io/)
-- [Seek Password](https://github.com/Wsine/seekpassword)@Wsine
+- [Seek Password](https://github.com/Wsine/seekpassword)@[Wsine](https://github.com/Wsine/)
 - [Flower Password](https://flowerpassword.com/)
