@@ -35,6 +35,7 @@ Download [master.zip](https://github.com/MeowCat-Studio/MeowPassword/archive/mas
 - Password saver
 - Mini program (Maybe I need to wait until I'm an adult.)
 - Translate System
+- Query to generate
 
 ### Thanks
 -----------
