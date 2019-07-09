@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>MeowPassword - 喵密</title>
+	<link type="text/css" rel="stylesheet" href="css/material.min.css" media="screen,projection" />
+	<link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
+</head>
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <main class="mdl-layout__content">
+        <div class="mdl-layout__tab-panel is-active" id="overview">
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>喵密 MeowPassword</h4>
+				<small>The C@ts Ar3 Best Pet And 5ay Mew0</small>
+				<form id="form">
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+						<input class="mdl-textfield__input" type="password" id="pwd" required="required" />
+						<label class="mdl-textfield__label" for="pwd">记忆密码 Memory Password</label>
+						<label id="btn_showpwd" class="mdl-button mdl-js-button mdl-button--icon" style="right:0;" for="pwd">
+							<i id="btn_showpwd_icon" class="material-icons">visibility</i>
+						</label>
+					</div>
+					<div class="mdl-tooltip" data-mdl-for="btn_showpwd">
+					切换密码显示<br />Toggle password visibility
+					</div>
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+						<input class="mdl-textfield__input" type="text" id="key" required="required" />
+						<label class="mdl-textfield__label" for="key">区分代码 Distinguish Code</label>
+					</div>
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label is-dirty">
+						<input id="length" class="mdl-slider mdl-js-slider" type="range" value="8" step="1" min="4" max="32" tabindex="0" />
+						<label class="mdl-textfield__label" for="length">密码长度 Password Length: <span id="pwd_length"></span></label>
+					</div>
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label is-dirty">
+						<label class="mdl-textfield__label for="options">选项 Options</label>
+						<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="cb_remove">
+							<input type="checkbox" id="cb_remove" class="mdl-checkbox__input" />
+							<span class="mdl-checkbox__label">不使用特殊字符 Don't use punctuation</span>
+						</label>
+					</div>
+					<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" id="btn_generate" type="submit">
+						生成 Generate
+					</button>
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+						<input class="mdl-textfield__input" type="text" id="code" placeholder="请先点击生成按钮 Please click Generate button first" readonly="readonly" />
+						<label class="mdl-textfield__label" for="code">加密密码 Encrypted Password</label>
+						<label id="btn_copy" data-clipboard-target="#code" class="mdl-button mdl-js-button mdl-button--icon" style="right:0;" for="code">
+							<i class="icons material-icons">description</i>
+						</label>
+					</div>
+					<div class="mdl-tooltip" data-mdl-for="btn_copy">
+					复制到剪贴板<br />Copy to clipboard
+					</div>
+				</form>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+	<div id="toast" class="mdl-js-snackbar mdl-snackbar">
+		<div class="mdl-snackbar__text"></div>
+		<button class="mdl-snackbar__action" type="button"></button>
+	</div>
+	<script type="text/javascript" src="js/clipboard.min.js"></script>
+	<script type="text/javascript" src="js/md5.min.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/material.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
