@@ -8,7 +8,7 @@ MeowPassword is a Javascript-based password generator
 ### Features
 -----------
 - Material Deisgn
-- Security (use Memory Password and Distinguish Code with MD5 algorithm to generate)
+- Security (use Memory Password and Tag with MD5 algorithm to generate)
 - Cross-platform (use Javascript, so you can use MeowPassword as long as you have a browser)
 - Customizable password length (supports 4 to 32 lengths)
 - Open source
