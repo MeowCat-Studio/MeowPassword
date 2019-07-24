@@ -1,20 +1,28 @@
 "use strict";
+var version = "1.0.2";
 $(document).ready(
-	function(){
+	function() {
+		$("#version").html(version);
 		var toast = document.querySelector("#toast");
 		var clipboard = new ClipboardJS("#btn_copy");
 		$("#btn_copy").click(
 			function() {
-				var action = function(event) {
-					$("#code").val("");
-				};
-				var data = {
-					message: "复制成功 Copy to clipboard successfully",
-					timeout: 2000,
-					actionHandler: action,
-					actionText: "清空 Clear"
-				};
-				toast.MaterialSnackbar.showSnackbar(data);
+				clipboard.on(
+					"success", function() {
+						var action = function(event) {
+							$("#code").val("");
+						}
+						showtoast(toast, "复制成功 Copy to clipboard successfully", 2000, action, "清空 Clear");
+					}
+				);
+				clipboard.on(
+					"error", function() {
+						var action = function(event) {
+							$("#code").val("");
+						}
+						showtoast(toast, "复制失败 Copy to clipboard failed", 2000, action, "清空 Clear");
+					}
+				);
 			}
 		)
 		$("#form").submit(
@@ -42,27 +50,24 @@ $(document).ready(
 				}
 			}
 		);
-		$("#pwd_length").text($("#length").val());
+		$("#pwd_length").text(
+			$("#length").val()
+		);
 		$("#length").change(
 			function() {
-				$("#pwd_length").text($("#length").val());
+				$("#pwd_length").text(
+					$("#length").val()
+				);
 			}
 		);
 		$("#length").on(
-			"mouseover", function() {
-				var $context = $(this);
-				if ($context.data("event")) {
-					return;
-				}
-				$context.data("event", "bindChange");
-				$context.one(
-					"mousedown", function() {
-						$(document).on(
-							"mousemove", function() {
-								$("#pwd_length").text($context.val());
-								$("#length.is-lowest-value").removeClass("is-lowest-value");
-							}
+			"mousedown touchstart", function() {
+				$(document).on(
+					"mousemove touchmove", function() {
+						$("#pwd_length").text(
+							$("#length").val()
 						);
+						$("#length.is-lowest-value").removeClass("is-lowest-value");
 					}
 				);
 			}
@@ -130,4 +135,13 @@ function generate_password(pwd, key, length, cb_remove) {
 		}
 	}
 	return "";
+}
+function showtoast(snackbar, msg, timeout, action, actionText) {
+	var data = {
+		message: msg,
+		timeout: timeout,
+		actionHandler: action,
+		actionText: actionText
+	};
+	snackbar.MaterialSnackbar.showSnackbar(data);
 }

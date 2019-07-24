@@ -8,7 +8,7 @@ The C@ts Ar3 Best Pet And 5ay Mew0
 ### 特性
 -----------
 - Material Deisgn 界面
-- 安全 (使用记忆密码和识别代码，通过 MD5 算法来生成)
+- 安全 (使用记忆密码和标签，通过 MD5 算法来生成)
 - 跨平台 (使用 Javascript, 只要有浏览器就可以使用 MeowPassword)
 - 可修改的密码长度 (支持 4 到 32 位的密码)
 - 完全开源

@@ -16,6 +16,8 @@
               <div class="mdl-card__supporting-text">
                 <h4>喵密 MeowPassword</h4>
 				<small>The C@ts Ar3 Best Pet And 5ay Mew0</small>
+				<br />
+				<small>Version <span id="version"></span></small>
 				<form id="form">
 					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
 						<input class="mdl-textfield__input" type="password" id="pwd" required="required" />
@@ -25,11 +27,11 @@
 						</label>
 					</div>
 					<div class="mdl-tooltip" data-mdl-for="btn_showpwd">
-					切换密码显示<br />Toggle password visibility
+					切换显示<br />Toggle visibility
 					</div>
 					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
 						<input class="mdl-textfield__input" type="text" id="key" required="required" />
-						<label class="mdl-textfield__label" for="key">区分代码 Distinguish Code</label>
+						<label class="mdl-textfield__label" for="key">密码标签 Password Tag</label>
 					</div>
 					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label is-dirty">
 						<input id="length" class="mdl-slider mdl-js-slider" type="range" value="8" step="1" min="4" max="32" tabindex="0" />
@@ -46,8 +48,8 @@
 						生成 Generate
 					</button>
 					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-						<input class="mdl-textfield__input" type="text" id="code" placeholder="请先点击生成按钮 Please click Generate button first" readonly="readonly" />
-						<label class="mdl-textfield__label" for="code">加密密码 Encrypted Password</label>
+						<input class="mdl-textfield__input" type="text" id="code" placeholder="" readonly="readonly" />
+						<label class="mdl-textfield__label" for="code">生成的密码 Generated Password</label>
 						<label id="btn_copy" data-clipboard-target="#code" class="mdl-button mdl-js-button mdl-button--icon" style="right:0;" for="code">
 							<i class="icons material-icons">description</i>
 						</label>
